@@ -29,12 +29,11 @@
    ```
 4. Abra o terminal e compile os arquivos:
    ```bash
-   javac Main.java
-
-```
+   javac -d out ./*.java
+   ```
 5. Execute o programa redirecionando um arquivo de texto contendo os casos de teste:
 ```bash
-java Main 
+java -cp out Main
 
 ```
 
@@ -74,7 +73,6 @@ Essa escolha é ideal pois a BFS garante encontrar sempre o caminho mais curto e
 A estrutura do grafo residual é fundamental para a solução pois permite "desfazer" alocações. Durante a execução, as arestas mantêm o registro de sua **capacidade residual direta** e do seu **fluxo atual (aresta reversa)**.
 Se o algoritmo fizer uma alocação ruim no início (ex: colocar a aplicação 'A' no computador '0', bloqueando outra aplicação que *só* poderia usar o '0'), as arestas reversas no grafo residual permitem que o algoritmo envie fluxo de volta, desfazendo a alocação e abrindo caminho para uma distribuição ótima geral.
 
----
 
 ## Conversão do Fluxo na Resposta do Problema
 
@@ -87,7 +85,6 @@ O resultado final é construído em duas etapas:
 
 Quando a demanda não pode ser atendida (saída `!`), o problema demonstra matematicamente o Teorema do Fluxo Máximo/Corte Mínimo. O sistema acusa falha porque a busca em largura esbarrou em um **Corte Mínimo** da rede. Isso ocorre geralmente devido ao Princípio da Casa dos Pombos: um subconjunto de aplicações exige, somado, mais máquinas do que o grupo de computadores com as quais elas são compatíveis, estrangulando o escoamento global.
 
----
 
 ## Análise de Complexidade
 
@@ -108,6 +105,4 @@ Portanto, para $T$ casos de teste no arquivo de entrada, a complexidade total as
 
 ## ✅ Comprovante de Accepted
 
-```
 
-```
