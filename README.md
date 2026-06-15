@@ -64,7 +64,7 @@ As regras do problema moldam as arestas criadas e seus limites de tráfego:
 
 ## Algoritmo Utilizado
 
-Utilizamos o algoritmo de **Ford-Fulkerson** implementado com uma **Busca em Largura (BFS)** para encontrar os caminhos aumentantes. Na literatura de ciência da computação, essa variação específica é formalmente conhecida como **Algoritmo de Edmonds-Karp**.
+Utilizamos o algoritmo de **Algoritmo de Edmonds-Karp** implementado com uma **Busca em Largura (BFS)** para encontrar os caminhos aumentantes. 
 
 Essa escolha é ideal pois a BFS garante encontrar sempre o caminho mais curto em número de arestas, evitando loops infinitos e garantindo independência dos valores de capacidade das arestas.
 
@@ -99,7 +99,7 @@ Portanto, para $T$ casos de teste no arquivo de entrada, a complexidade total as
 
 ## Casos Especiais do Problema
 
-1. **Leitura Invertida por causa do LIFO:** A biblioteca base utilizada modela as listas de adjacência (classe `Bag`) como pilhas invertidas (LIFO). Para garantir que a prioridade de alocação batesse letra por letra com o gabarito oficial do UVa (ex: priorizar computadores menores primeiro), a leitura da string de computadores compatíveis teve que ser iterada e adicionada no grafo *de trás para frente*.
+1. **Leitura Invertida por causa do LIFO:** A biblioteca base utilizada modela as listas de adjacência (classe `Bag`) como pilhas "invertidas" (LIFO). Para garantir que a prioridade de alocação batesse letra por letra com o gabarito oficial do UVa (ex: priorizar computadores menores primeiro), a leitura da string de computadores compatíveis teve que ser iterada e adicionada no grafo *de trás para frente*.
 2. **Controle de EOF e Linhas em Branco:** O modelo de teste agrupa as informações por dia, não há indicativo prévio do tamanho da entrada. Foi necessário implementar lógicas no `Scanner` para tratar linhas em branco como "fechamento de dia" (gatilho para executar a rede e limpá-la em seguida) e garantir que o último dia processado pelo gatilho do End-of-File (EOF) não fosse perdido.
 
 
