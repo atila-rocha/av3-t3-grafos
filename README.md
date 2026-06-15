@@ -13,12 +13,15 @@
 ## 💻 Linguagem Utilizada
 - **Java**
 
+## Link da apresentação
+[https://youtu.be/aSCo05kJPLc](https://youtu.be/aSCo05kJPLc)
+
 ## 🚀 Como Executar a Solução
 
 1. Certifique-se de ter o JDK (Java Development Kit) instalado na sua máquina.
 2. Clone o projeto usando o seguinte comando:
    ```bash
-   git clone link do repo
+   git clone [https://github.com/atila-rocha/av3-t3-grafos.git](https://github.com/atila-rocha/av3-t3-grafos.git)
    ```
 3. Acesse a pasta `src` usando o seguinte comando:
    ```bash
