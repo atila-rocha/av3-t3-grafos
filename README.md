@@ -105,4 +105,6 @@ Portanto, para $T$ casos de teste no arquivo de entrada, a complexidade total as
 
 ## ✅ Comprovante de Accepted
 
+![https://github.com/atila-rocha/av3-t3-grafos/blob/main/evidencias/accepted.jpeg](https://github.com/atila-rocha/av3-t3-grafos/blob/main/evidencias/accepted.jpeg)
+
 
